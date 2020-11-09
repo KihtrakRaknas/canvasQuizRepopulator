@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "canvasRepopulator",
+  "version": "1.5",
+
+  "description": "Re-enters the answers you choose from the last time you took a quiz.",
+
+  "icons": {
+    "48": "umd.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.instructure.com/courses/*/quizzes/*/take"],
+      "js": ["script.js"]
+    }
+  ]
+
+}
